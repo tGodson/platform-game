@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
     "dev": "webpack-dev-server --config webpack/base.js --open",
-    "start": "webpack-dev-server --config webpack/base.js --open",
+    "start": "npm run build && webpack-dev-server --host=127.0.0.1 --port=$PORT --disable-host-check",
     "test": "export NODE_ENV=test && jest"
   },
   "jest": {
