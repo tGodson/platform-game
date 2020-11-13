@@ -73,5 +73,6 @@
     "terser-webpack-plugin": "^2.3.6",
     "webpack": "^4.43.0",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "heroku-run-build-script": true
 }
