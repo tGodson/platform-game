@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/tGodson/platform-game/issues"
   },
-  "homepage": "http://tGodson.github.io/platform-game",
+  "homepage": "https://github.com/tGodson/platform-game#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-syntax-import-meta": "^7.8.3",
