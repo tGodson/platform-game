@@ -9,7 +9,7 @@
     "start": "http-server dist",
     "test": "export NODE_ENV=test && jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "jest": {
     "setupFiles": [
@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/tGodson/platform-game/issues"
   },
-  "homepage": "https://github.com/tGodson/platform-game#readme",
+  "homepage": "http://tGodson.github.io/platform-game",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-syntax-import-meta": "^7.8.3",

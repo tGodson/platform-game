@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import renderScores from '../API/ServeHighScore';
+import { renderScores } from '../API/ServeHighScore';
 import Button from '../Objects/Buttons';
 
 export default class BootScene extends Phaser.Scene {
