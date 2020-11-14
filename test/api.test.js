@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-
+import "babel-polyfill"
 import getScores from '../src/API/ServeHighScore';
 
 // eslint-disable-next-line no-unused-vars

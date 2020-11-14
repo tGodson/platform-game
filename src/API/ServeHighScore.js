@@ -1,4 +1,4 @@
-async function getScores() {
+const getScores = async () => {
   try {
     const response = await fetch(
       'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/1caonueBC9pjahHnAHjK/scores/',
@@ -17,12 +17,12 @@ async function getScores() {
   }
 }
 
-async function sortScores(arr) {
+const sortScores = async (arr) => {
   const data = await arr.sort((a, b) => b.score - a.score);
   return data;
 }
 
-async function renderScores() {
+const renderScores = async () => {
   const scores = await getScores();
   const sortedScores = await sortScores(scores);
 
@@ -41,4 +41,4 @@ async function renderScores() {
   }
 }
 
-export { renderScores, getScores };
+export { renderScores, getScores, sortScores };
