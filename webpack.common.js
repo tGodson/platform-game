@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');// eslint-disable-line 
 module.exports = {
   entry: './src/index.js',
   plugins: [new HtmlWebpackPlugin({
-    template: './src/template.html',
+    template: './index.html'
   })],
   module: {
     rules: [
@@ -19,7 +19,7 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|xml|jpeg)$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -28,6 +28,21 @@ module.exports = {
           },
         },
       },
-    ],
-  },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: [/\.vert$/, /\.frag$/],
+        use: 'raw-loader',
+      },
+      {
+        test: /\.mp3$/i,
+        use: 'file-loader',
+      }
+    ]
+  }
 };
